@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+body {
+  /*background-image: url("./img/wallpaper.jpg");*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  font-family: "Montserrat";
+  background-color: rgba(255, 255, 255, 0.295);
+  font-weight: 700;
+  z-index: 50;
+  transition: ease-in-out 250ms;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+.header__text {
+  margin-left: 10px;
+}
+.header__text h1 {
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+.header__links {
+  width: 100%;
+  margin: auto;
+  background-color: #4a7296;
+}
+.header__links ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+.header__links a {
+  font-size: 14px;
+  padding: 1rem;
+  text-decoration: none;
+  color: azure;
+}
+.header__links a:hover {
+  background-color: rgb(221, 221, 221);
+  color: var(--mainBlue);
+  transition: 250ms;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 3rem;
+}
+.sidenav img {
+  width: 100%;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media only screen and (max-width: 900px) {
+  .header__text h1 {
+    font-size: 20px;
+  }
+  .header__text h4 {
+    font-size: 11px;
+  }
+  .header__links a {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .white .header__links ul {
+    margin-top: 15px;
+  }
+}

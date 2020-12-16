@@ -1,0 +1,31 @@
+:root {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  --mainBlue: #4a7296;
+  --mainGreen: #208317;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3f3;
+  --secWhite:  #e7e7e7f3;
+  --mainDark: #232528;
+  --mainyellow: #ffa400;
+}
+
+
+.svgLoader {
+    animation: spin 0.5s linear infinite;
+    margin: auto;
+  }
+  .divLoader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hide {
+    display: none;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
